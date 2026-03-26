@@ -1,0 +1,27 @@
+Introduction to Machine Learning — Sample Lecture Transcript
+
+Welcome everyone. Today we're going to cover the fundamentals of machine learning — what it is, how it works, and why it matters in the real world.
+
+Machine learning is a subset of artificial intelligence that gives computers the ability to learn from data without being explicitly programmed for every task. Instead of writing specific rules, we feed the system examples and let it discover patterns on its own.
+
+There are three main types of machine learning. The first is supervised learning, where we train a model on labelled data — meaning we provide both the input and the correct output. Common examples include email spam detection and image classification. Algorithms like linear regression, logistic regression, and decision trees fall into this category.
+
+The second type is unsupervised learning, where the data has no labels. The model must find hidden structure on its own. K-means clustering, for instance, groups similar data points together without being told what the groups should be. This is useful for customer segmentation and anomaly detection.
+
+The third type is reinforcement learning, which is quite different. An agent learns by interacting with an environment and receiving rewards or penalties for its actions. This is how AlphaGo learned to play chess at a superhuman level, and how robotics systems learn to walk.
+
+A critical concept in machine learning is overfitting. This happens when a model learns the training data too well — it memorises the noise rather than the underlying pattern — and then performs poorly on new, unseen data. The opposite problem is underfitting, where the model is too simple to capture the patterns at all.
+
+To combat overfitting, we use techniques like cross-validation, where we split our data into training and test sets to evaluate how well the model generalises. Regularisation is another technique that penalises overly complex models. Dropout is commonly used in neural networks for the same purpose.
+
+Feature engineering is the process of selecting, transforming, and creating input variables to improve model performance. It requires domain knowledge and is often described as the most important and time-consuming part of a real machine learning project. For example, instead of feeding raw timestamps, you might extract the day of the week or the hour as separate features.
+
+Neural networks are inspired by the structure of the human brain. They consist of layers of interconnected nodes that transform input signals into output predictions. Deep learning refers to neural networks with many layers — these are the architectures behind modern breakthroughs in image recognition, natural language processing, and generative AI.
+
+The model training process involves feeding data forward through the network, calculating the error between predicted and actual outputs using a loss function, and then backpropagating that error to update the model weights using gradient descent. This process repeats over many iterations called epochs.
+
+Evaluation metrics vary by task. For classification problems, we use accuracy, precision, recall, and the F1 score. For regression problems, we typically use mean absolute error or root mean squared error. Choosing the right metric depends on what type of error matters most in your application.
+
+Finally, it is worth noting that machine learning is not magic. It requires quality data, careful feature engineering, thoughtful model selection, and rigorous evaluation. The most successful practitioners combine technical skill with domain knowledge and a clear understanding of the problem they are trying to solve.
+
+Thank you — in our next session we will move on to practical implementation using scikit-learn and Python.
